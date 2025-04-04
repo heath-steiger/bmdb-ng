@@ -10,6 +10,10 @@ import { NotFoundComponent } from './core/not-found/not-found.component';
 import { FormsModule } from '@angular/forms';
 import { MovieEditComponent } from './feature/movie/movie-edit/movie-edit.component';
 import { MovieDetailComponent } from './feature/movie/movie-detail/movie-detail.component';
+import { ActorCreateComponent } from './feature/actor/actor-create/actor-create.component';
+import { ActorDetailComponent } from './feature/actor/actor-detail/actor-detail.component';
+import { ActorEditComponent } from './feature/actor/actor-edit/actor-edit.component';
+import { ActorListComponent } from './feature/actor/actor-list/actor-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { MovieDetailComponent } from './feature/movie/movie-detail/movie-detail.
     MovieCreateComponent,
     NotFoundComponent,
     MovieEditComponent,
-    MovieDetailComponent
+    MovieDetailComponent,
+    ActorCreateComponent,
+    ActorDetailComponent,
+    ActorEditComponent,
+    ActorListComponent
   ],
   imports: [
     BrowserModule,
