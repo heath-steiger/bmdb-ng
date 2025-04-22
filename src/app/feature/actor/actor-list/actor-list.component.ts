@@ -26,5 +26,19 @@ export class ActorListComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
   }
+  delete(id: number) {
+    this.subscription = this.actorSvc.delete(id).subscribe({
+      next: () => {
+        // refresh the actor list
+        this.subscription = this.actorSvc.list().subscribe((resp) => {
+          this.actors = resp;
+        });
+      },
+      error: (err) => {
+        console.log('Error deleting actor for id: '+id);
+        alert('Error deleting actor for id: '+id);
+      }
+    });
+  }
 
 }

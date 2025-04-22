@@ -14,6 +14,14 @@ import { ActorCreateComponent } from './feature/actor/actor-create/actor-create.
 import { ActorDetailComponent } from './feature/actor/actor-detail/actor-detail.component';
 import { ActorEditComponent } from './feature/actor/actor-edit/actor-edit.component';
 import { ActorListComponent } from './feature/actor/actor-list/actor-list.component';
+import { MenuComponent } from './core/menu/menu.component';
+import { CreditListComponent } from './feature/credit/credit-list/credit-list.component';
+import { CreditEditComponent } from './feature/credit/credit-edit/credit-edit.component';
+import { CreditCreateComponent } from './feature/credit/credit-create/credit-create.component';
+import { CreditDetailComponent } from './feature/credit/credit-detail/credit-detail.component';
+import { UserLoginComponent } from './feature/user/user-login/user-login.component';
+import { MovieCreditsComponent } from './feature/movie/movie-credits/movie-credits.component';
+import { SortPipe } from './pipe/sort.pipe';
 
 @NgModule({
   declarations: [
@@ -26,7 +34,15 @@ import { ActorListComponent } from './feature/actor/actor-list/actor-list.compon
     ActorCreateComponent,
     ActorDetailComponent,
     ActorEditComponent,
-    ActorListComponent
+    ActorListComponent,
+    MenuComponent,
+    CreditListComponent,
+    CreditEditComponent,
+    CreditCreateComponent,
+    CreditDetailComponent,
+    UserLoginComponent,
+    MovieCreditsComponent,
+    SortPipe
   ],
   imports: [
     BrowserModule,
